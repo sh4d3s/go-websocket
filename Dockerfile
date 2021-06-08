@@ -6,3 +6,4 @@ FROM alpine
 WORKDIR /app
 COPY --from=builder /src/goapp /app/
 ENTRYPOINT ./goapp
+EXPOSE 8080
